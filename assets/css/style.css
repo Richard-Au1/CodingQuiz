@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    margin-bottom: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.highScore:hover{
+    background-color: gray;
+}
+
+.timer-text {
+    padding: 10px;
+    text-align: right;
+}
+
+.timer {
+    height: 100px;
+    color: black;
+
+}
+
+.large-font {
+    font-size: 20px;
+    text-align:center;
+}
+
+.introduction {
+    display: inline-block;
+    padding: 20px;
+    max-width: 50%;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1183px) {
+    main {
+      flex-direction: column;
+    }
+    .results {
+      width: 90vw;
+    }
+  
+    section {
+      background-color: white;
+      margin: 20px auto;
+      width: 92vw;
+    }
+  }
+  
+  @media screen and (max-width: 504px) {
+    .large-font {
+      font-size: 2em;
+    }
+  
+    .reset-button {
+      font-size: 12px;
+      width: 20ox;
+      
+    }
+  
+    .timer {
+      height: 200px;
+    }
+  }
