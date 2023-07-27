@@ -1,79 +1,49 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-        <title>Coding Quiz</title>
-    </head>
-    <body>
-        <header>
-                <a href="" class="highScore">View HighScore</a>
-                <timer1 class="timer">
-                    <p>Time: 
-                        <span id="timer">0</span>
-                    </p>
-                </timer1>
-        </header>
 
-         <main class="quiz"> -->
-            <!-- <intro class="introduction">
-                <text>
-                    <h1>Coding Test</h1>
-                    <word class="large-font questions">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds
-                    <button class="start-button">Start</button>
-                    </word>
-                </text>
-            </intro>
-             <examination class="hide" id="questions">
-                <h2 id="question-words"></h2>
-                <pick class="options" id="options"></picks>
-             </examination> -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Code Quiz</title>
+</head>
 
-             <!DOCTYPE html>
-             <html lang="en">
-             
-                 <head>
-                     <meta charset="UTF-8">
-                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                     <link rel="stylesheet" href="./assets/css/style.css">
-                     <title>Code Quiz</title>
-                 </head>
-             
-                 <body>
-                     <header>
-                         <scores>
-                             <a href="highscores.html"><button class="scores-header" id="view-high-scores">View High Scores</button></a>
-                         </scores>
-                     
-                         <clock class="timer">
-                             <p>Timer: 
-                                 <span id="timer">0</span>
-                             </p>
-                         </clock>
-                     </header>
-                     <main class="quiz">
-                         <intro id="quiz-start">
-                             <nav class="introduction" id="start-screen">
-                                 <h1>Coding Quiz Challenge</h1>
-                                 <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
-                                 <button id="start">Start Quiz</button>
-                             </nav>
-                         </intro>
-                         <examBegin class="hide" id="questions">
-                             <h2 id="question-words"></h2>
-                             <opt class="options" id="options"></opt>
-                         </examBegin>
-                         <examEnd class="hide" id="quiz-end">
-                             <h2>All Done!</h2>
-                             <p>Your final score is: <span id="score-final"></span></p>
-                             <p>Please enter your name: <input type="text" id="name" max="3" />
-                                 <button id="submit-score">Submit</button>
-                             </p>
-                         </examEnd>
-             
-                         <div id="feedback" class="feedback hide"></div>
-                     </main>
-                     <script src="./assets/javascript/script.js"></script>
-                 </body>
-             </html>
+<body>
+    <header>
+        <scores>
+            <a href="highscores.html"><button class="scores-header" id="view-high-scores">View High Scores</button></a>
+        </scores>
+
+        <clock class="timer">
+            <p>Timer:
+                <span id="timer">0</span>
+            </p>
+        </clock>
+    </header>
+    <main class="quiz">
+        <intro id="quiz-start">
+            <nav class="introduction" id="start-screen">
+                <h1>Coding Quiz Challenge</h1>
+                <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect
+                    answers will penalize your score/time by ten seconds!</p>
+                <button id="start">Start Quiz</button>
+            </nav>
+        </intro>
+        <examBegin class="hide" id="questions">
+            <h2 id="question-words"></h2>
+            <opt class="options" id="options"></opt>
+        </examBegin>
+        <examEnd class="hide" id="quiz-end">
+            <h2>All Done!</h2>
+            <p>Your final score is: <span id="score-final"></span></p>
+            <p>Please enter your name: <input type="text" id="name" max="3" />
+                <button id="submit-score">Submit</button>
+            </p>
+        </examEnd>
+
+        <div id="feedback" class="feedback hide"></div>
+    </main>
+    <script src="./assets/javascript/script.js"></script>
+</body>
+
+</html>
