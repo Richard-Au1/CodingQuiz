@@ -1,48 +1,30 @@
-var timerElement = document.querySelector(".timer-count");
-var startButton = document.querySelector(".start-button");
+var questions = [
+    {
+        prompt: "Which language is a coding language?",
+        options: ["<javascript>", "<japanese>", "<penguin>", "<English>"],
+        answer: "<javascript>"
+    },
 
+    {
+        prompt: "How do you call a function?",
+        options: ["function[]", "function()", "#function", ".function"],
+        answer: "function()"
+    },
 
+    {
+        prompt: "What is main in this example? (<main class= 'header'> ",
+        options: ["element", "class", "header", "parameter"],
+        answer: "element"
+    },
 
-var timer;
-var timerCount;
+    {
+        prompt: "In JavaScript, which of the following is a OR operator?",
+        options: ["||", "&&", "%", "/"],
+        answer: "||" 
+    },
 
-
-function startTimer() {
-    // Sets timer
-    timer = setInterval(function() {
-      timerCount--;
-      timerElement.textContent = timerCount;
-      if (timerCount >= 0) {
-        // Tests if win condition is met
-        if (isWin && timerCount > 0) {
-          // Clears interval and stops timer
-          clearInterval(timer);
-          winGame();
-        }
-      }
-      // Tests if time has run out
-      if (timerCount === 0) {
-        // Clears interval
-        clearInterval(timer);
-        loseGame();
-      }
-    }, 1000);
-  }
-startButton.addEventListener("click", startGame);
-
-// Calls init() so that it fires when page opened
-init();
-
-// Bonus: Add reset button
-var resetButton = document.querySelector(".reset-button");
-
-function resetGame() {
-  // Resets win and loss counts
-  winCounter = 0;
-  loseCounter = 0;
-  // Renders win and loss counts and sets them into client storage
-  setWins()
-  setLosses()
-}
-// Attaches event listener to button
-resetButton.addEventListener("click", resetGame);
+    {
+        prompt: "A named element in a JavaScript program that is used to store information into a list is called: ",
+        options: ["duck", "number", "array", "boolean"],
+        answer: "array"
+    }];
