@@ -1,5 +1,10 @@
 * {
-    font-family: Georgia, Times, "Times New Roman", serif;
+    font-family:'Times New Roman', Times, serif;
+}
+
+:root{
+    --pixel: 15px;
+    --light: white;
 }
 
 .quiz, .scores {
@@ -8,7 +13,7 @@
 }
 
 p {
-    margin: 15px 15px;
+    margin: var(--pixel) var(--pixel);
 }
 
 .introduction {
@@ -17,21 +22,21 @@ p {
 
 .scoresHeader {
     position: absolute;
-    top: 15px;
-    left: 15px;
+    top: var(--pixel);
+    left: var(--pixel);
 }
 
 .timer {
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: var(--pixel);
+    right: var(--pixel);
 }
 
 button {
     display: inline-block;
     margin: 10px;
     cursor: pointer;
-    color: #fff;
+    color: var(--light);
     background-color: purple;
     border-radius: 5px;
     border: 0;
@@ -39,7 +44,7 @@ button {
 }
 
 ol {
-    padding-left: 15px;
+    padding-left: var(--pixel);
     max-height: 600px;
     overflow: auto;
 }
@@ -73,8 +78,8 @@ li:nth-child(odd) {
     font-style: bold;
     font-size: 100%;
     margin-top: 20px;
-    padding-top: 15px;
-    color: #fff;
+    padding-top: var(--pixel);
+    color: var(--light);
     border-top: 2px solid #5931e9;
 }
 
