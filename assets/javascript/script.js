@@ -35,7 +35,7 @@ var choicesEl = document.querySelector("#options");
 var submitBtn = document.querySelector("#submit-score");
 var startBtn = document.querySelector("#start");
 var nameEl = document.querySelector("#name");
-var feedbackEl = document.querySelector("#feedback");
+var fbEl = document.querySelector("#fb");
 var reStartBtn = document.querySelector("#restart");
 
 var currentQuestionIndex = 0;
@@ -72,15 +72,15 @@ function questionClick() {
         time = 0;
       }
       timerEl.textContent = time;
-      feedbackEl.textContent = `Wrong! The correct answer was ${questions[currentQuestionIndex].answer}.`;
-      feedbackEl.style.color = "red";
+      fbEl.textContent = `Incorrect, the correct answer was ${questions[currentQuestionIndex].answer}.`;
+      fbEl.style.color = "red";
     } else {
-      feedbackEl.textContent = "Correct! Next question";
-      feedbackEl.style.color = "green";
+      fbEl.textContent = "Correct! Next question";
+      fbEl.style.color = "green";
     }
-    feedbackEl.setAttribute("class", "feedback");
+    fbEl.setAttribute("class", "fb");
     setTimeout(function() {
-      feedbackEl.setAttribute("class", "feedback hide");
+      fbEl.setAttribute("class", "fb hide");
     }, 2000);
     currentQuestionIndex++;
     if (currentQuestionIndex === questions.length) {
