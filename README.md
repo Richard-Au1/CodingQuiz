@@ -10,6 +10,7 @@ No installation required to use the website.
 
 ## Usage
 Github Repository:https://github.com/Richard-Au1/CodingQuiz
+
 Aplication Website: https://richard-au1.github.io/CodingQuiz/
 
 Once the browser is open, the user will be greet with an introduction dialogue. Listed below
